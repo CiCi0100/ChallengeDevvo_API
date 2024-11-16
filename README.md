@@ -177,16 +177,16 @@ O relatório HTML gerado será salvo no mesmo diretório e exibirá:
 
 Aqui estão os relatórios detalhados sobre os testes realizados:
 
-1. [Relatório de Teste - API de Piadas](./docs/Relatório%20de%20Teste%20-%20API%20de%20Piadas.pdf)  
+1. [Relatório de Teste - API de Piadas]([./docs/Relatório%20de%20Teste%20-%20API%20de%20Piadas.pdf](https://docs.google.com/document/d/1NmxhKje6i41G64J4319cuSx1m23UwfZBT5vpjw_4xXA/edit?usp=drivesdk))  
    Descreve os testes funcionais e de carga realizados na API de piadas, incluindo falhas identificadas e recomendações.
 
-2. [Análise dos Resultados](./docs/Análise%20dos%20Resultados.pdf)  
+2. [Análise dos Resultados]([https://docs.google.com/document/d/1hEOmjIEzU4qRVKS6w607_Jc5Qj1-dZa49FbnbeRRJp4/edit?usp=drivesdk](https://docs.google.com/document/d/1hEOmjIEzU4qRVKS6w607_Jc5Qj1-dZa49FbnbeRRJp4/edit?usp=drivesdk))  
    Detalha os padrões de erros observados, melhorias sugeridas e possíveis riscos encontrados durante os testes.
 
-3. [Documentação para relatar os bugs encontrados, com base no relatório de Testes 01](./docs/Documentação%20para%20relatar%20os%20bugs%20encontrados,%20com%20base%20no%20relatório%20de%20Testes%2001.pdf)  
+3. [Documentação para relatar os bugs encontrados, com base no relatório de Testes 01]([./docs/Documentação%20para%20relatar%20os%20bugs%20encontrados,%20com%20base%20no%20relatório%20de%20Testes%2001.pdf](https://docs.google.com/document/d/149U0eBfemnh5eaPDsXfGuzGX8jqI6uH-wguRN-cIxpQ/edit?usp=drivesdk))  
    Lista os bugs encontrados, passos para reproduzir os problemas e evidências coletadas durante os testes.
 
-4. [Documentação de bugs baseado no relatório de teste de carga 01](./docs/Documentação%20de%20bugs%20baseado%20no%20relatório%20de%20teste%20de%20carga%2001.pdf)  
+4. [Documentação de bugs baseado no relatório de teste de carga 01]([./docs/Documentação%20de%20bugs%20baseado%20no%20relatório%20de%20teste%20de%20carga%2001.pdf](https://docs.google.com/document/d/1I19g6yZJS2PVz9oAojd3h8KVG0prPNhh8zG8PYzsTIA/edit?usp=drivesdk))  
    Detalha os problemas identificados durante os testes de carga, incluindo falhas de infraestrutura e inconsistências nas respostas da API.
 
 ---
