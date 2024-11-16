@@ -45,7 +45,7 @@ pip install requests
 1. **Clone ou Baixe o Repositório**
    - Clone o repositório:
      ```bash
-     git clone https://github.com/seu-usuario/teste-carga-api.git
+     git clone https://github.com/CiCi0100/ChallengeDevvo_API.git
      ```
    - Ou baixe os arquivos manualmente e extraia-os.
 
