@@ -1,10 +1,10 @@
-### README: Teste de Carga com Python Requests e Relatório HTML
+### README: Testes Automatizado em API-Risadas, com Python Requests e Relatório HTML
 
 ---
 
 ## **Descrição**
 
-Este projeto realiza testes de cargae funcionais. Ele mede o tempo de resposta de cada requisição, garante que tudo esteja funcionando corretamente e gera um relatório detalhado em formato HTML para facilitar a análise dos resultados.
+Este projeto realiza testes de carga e funcionais. Ele mede o tempo de resposta de cada requisição, garante que tudo esteja funcionando corretamente e gera um relatório detalhado em formato HTML para facilitar a análise dos resultados.
 
 ---
 
@@ -73,31 +73,84 @@ pip install requests
 
 ## **Funcionamento do Script**
 
-1. **Simulação de Teste de Carga**:
-   - O script utiliza `concurrent.futures` para simular 10 usuários simultâneos.
-   - Cada usuário faz uma requisição à API definida (`https://official-joke-api.appspot.com/jokes/ten`).
-   - O tempo de resposta e a consistência das respostas retornadas são validados.
+Este script automatiza a execução de testes de API e gera relatórios detalhados com métricas e informações úteis. Abaixo estão os passos e funcionalidades principais:
 
-2. **Validação de Resultados**:
-   - Verifica se:
-     - O status HTTP é 200 (OK).
-     - Os IDs retornados são únicos.
+**1. Execução de Testes**
 
-3. **Geração de Relatório HTML**:
-   - Um relatório detalhado é gerado automaticamente após os testes.
-   - Inclui:
-     - Tempo de resposta para cada requisição.
-     - Status de sucesso ou falha.
-     - Resumo geral com número de requisições bem-sucedidas e o tempo médio de resposta.
+Os testes utilizam a API de piadas disponível no endpoint https://official-joke-api.appspot.com/jokes/random.
+
+Cada teste faz uma requisição à API, valida campos esperados e calcula métricas como tempo de resposta e tamanho da resposta.
+
+Todos os resultados dos testes (sucesso ou falha) são armazenados em uma lista de resultados, com detalhes como:
+
+Nome do teste.
+
+Status (PASS ou FAIL).
+
+Detalhes do erro (em caso de falha).
+
+Data e hora do teste.
+
+
+
+**2. Métricas Coletadas**
+
+Durante a execução dos testes, o script calcula as seguintes métricas:
+
+Tempo médio de resposta: tempo médio de processamento da API em milissegundos.
+
+Tamanho médio das respostas: tamanho médio das respostas da API em bytes.
+
+Taxa de sucesso: percentual de testes concluídos com sucesso.
+
+Distribuição dos tipos de piadas: contagem de piadas categorizadas por tipo.
+
+
+**3. Geração de Relatório**
+
+Após a execução dos testes, um relatório em formato HTML é gerado.
+
+O relatório inclui:
+
+Data e hora da execução.
+
+Métricas gerais.
+
+Detalhes dos testes realizados.
+
+
+O relatório é salvo automaticamente em uma pasta chamada relatórios, que é criada automaticamente caso não exista.
+
+
+**4. Logs**
+
+Todas as ações e eventos importantes são registrados em um arquivo de log chamado test_automation.log, incluindo:
+
+Erros encontrados durante a execução.
+
+Informações sobre a geração do relatório.
+
+
+
+**5. Estrutura do Projeto**
+
+relatórios/: pasta onde os relatórios gerados serão salvos.
+
+test_automation.log: arquivo de log com os eventos do script.
+
+
 
 ---
 
 ## **Premissas**
 
-- A API alvo está funcional e responde às requisições.
-- Cada resposta da API contém um conjunto de piadas com IDs únicos.
-- O ambiente de execução possui conectividade com a Internet.
-- O Python 3.7 ou superior está instalado corretamente no sistema.
+A API alvo está operacional e responde às requisições dentro de tempos aceitáveis.
+
+Cada resposta da API contém uma piada com um ID único e os campos esperados (ex.: id, type, setup, punchline).
+
+O ambiente de execução possui acesso à Internet estável para realizar as requisições.
+
+O Python 3.7 ou superior está instalado e configurado corretamente no sistema.
 
 ---
 
