@@ -4,7 +4,7 @@
 
 ## **Descrição**
 
-Este projeto realiza testes de carga simulando 10 usuários simultâneos que fazem requisições a uma API. Ele mede o tempo de resposta de cada requisição, garante que tudo esteja funcionando corretamente e gera um relatório detalhado em formato HTML para facilitar a análise dos resultados.
+Este projeto realiza testes de cargae funcionais. Ele mede o tempo de resposta de cada requisição, garante que tudo esteja funcionando corretamente e gera um relatório detalhado em formato HTML para facilitar a análise dos resultados.
 
 ---
 
@@ -26,7 +26,7 @@ Este projeto realiza testes de carga simulando 10 usuários simultâneos que faz
 
 ### **2. Dependências**
 
-As bibliotecas utilizadas neste projeto são:
+As principais bibliotecas utilizadas neste projeto são:
 
 - **requests**: Para fazer as requisições HTTP.
 - **concurrent.futures**: Para gerenciar requisições simultâneas (embutido no Python).
@@ -46,7 +46,6 @@ pip install requests
    - Clone o repositório:
      ```bash
      git clone https://github.com/seu-usuario/teste-carga-api.git
-     cd teste-carga-api
      ```
    - Ou baixe os arquivos manualmente e extraia-os.
 
@@ -59,10 +58,15 @@ pip install requests
      ```bash
      python load_test.py
      ```
+     ou
+     ```bash
+     python test_automation.py
+     ```
 
 3. **Verifique o Relatório**
-   - Após a execução, será gerado um arquivo de relatório HTML no mesmo diretório do script.
-   - O arquivo será nomeado no formato `load_test_report_YYYYMMDD_HHMMSS.html`.
+   - Após a execução, será gerado um arquivo de relatório HTML no mesmo diretório do script, na pasta ***relatorios***.
+   - O arquivo será nomeado no formato `load_test_report_YYYYMMDD_HHMMSS.html`
+`test_automation_report_YYYYMMDD_HHMMSS.html`.
    - Abra o arquivo em qualquer navegador para visualizar os resultados.
 
 ---
@@ -115,17 +119,22 @@ O relatório HTML gerado será salvo no mesmo diretório e exibirá:
 - Resumo com o total de sucessos e o tempo médio de resposta.
 
 ### **Documentação, Relatórios e Análise dos resultados Disponíveis**
-[Relatório de Teste - API de Piadas](file:///C:/Users/Admin/Downloads/Relat%C3%B3rio%20de%20Teste%20-%20API%20de%20Piadas.pdf)
-Descreve os testes funcionais e de carga realizados na API de piadas, incluindo falhas identificadas e recomendações.
 
-[Análise dos Resultados](file:///C:/Users/Admin/Downloads/An%C3%A1lise%20dos%20Resultados.pdf)
-Detalha os padrões de erros observados, melhorias sugeridas e possíveis riscos encontrados durante os testes.
+# Relatórios de Teste
 
-[Documentação para relatar os bugs encontrados, com base no relatório de Testes 01](file:///C:/Users/Admin/Downloads/Documenta%C3%A7%C3%A3o%20para%20relatar%20os%20bugs%20%20encontrados,%20com%20base%20no%20relat%C3%B3rio%20de%20Testes%2001.pdf)
-Lista os bugs encontrados, passos para reproduzir os problemas, e evidências coletadas durante os testes.
+Aqui estão os relatórios detalhados sobre os testes realizados:
 
-[Documentação de bugs baseado no relatório de teste de carga 01](file:///C:/Users/Admin/Downloads/Documenta%C3%A7%C3%A3o%20de%20bugs%20%20baseado%20no%20relat%C3%B3rio%20de%20teste%20de%20carga%2001.pdf)
-Detalha os problemas identificados durante os testes de carga, incluindo falhas de infraestrutura e inconsistências nas respostas da API.
+1. [Relatório de Teste - API de Piadas](./docs/Relatório%20de%20Teste%20-%20API%20de%20Piadas.pdf)  
+   Descreve os testes funcionais e de carga realizados na API de piadas, incluindo falhas identificadas e recomendações.
+
+2. [Análise dos Resultados](./docs/Análise%20dos%20Resultados.pdf)  
+   Detalha os padrões de erros observados, melhorias sugeridas e possíveis riscos encontrados durante os testes.
+
+3. [Documentação para relatar os bugs encontrados, com base no relatório de Testes 01](./docs/Documentação%20para%20relatar%20os%20bugs%20encontrados,%20com%20base%20no%20relatório%20de%20Testes%2001.pdf)  
+   Lista os bugs encontrados, passos para reproduzir os problemas e evidências coletadas durante os testes.
+
+4. [Documentação de bugs baseado no relatório de teste de carga 01](./docs/Documentação%20de%20bugs%20baseado%20no%20relatório%20de%20teste%20de%20carga%2001.pdf)  
+   Detalha os problemas identificados durante os testes de carga, incluindo falhas de infraestrutura e inconsistências nas respostas da API.
 ---
 
 ---
