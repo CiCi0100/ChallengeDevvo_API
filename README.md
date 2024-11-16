@@ -188,13 +188,6 @@ Aqui estão os relatórios detalhados sobre os testes realizados:
 
 4. [Documentação de bugs baseado no relatório de teste de carga 01](./docs/Documentação%20de%20bugs%20baseado%20no%20relatório%20de%20teste%20de%20carga%2001.pdf)  
    Detalha os problemas identificados durante os testes de carga, incluindo falhas de infraestrutura e inconsistências nas respostas da API.
----
-
----
-
-## **Licença**
-
-Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
 
 ---
 
