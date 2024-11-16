@@ -54,11 +54,11 @@ pip install requests
      ```bash
      cd ./suite
      ```
-   - Execute o script:
+   - Execute o teste de carga:
      ```bash
      python load_test.py
      ```
-     ou
+   - Execute os testes funcionais:
      ```bash
      python test_automation.py
      ```
